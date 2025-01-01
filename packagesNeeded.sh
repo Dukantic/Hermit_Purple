@@ -4,8 +4,8 @@ sudo pacman -Sy
 packages=(
     kitty
     neovim    
-    dmenu
     pipewire
+    pipewire-pulse
 )
 
 for package in "${packages[@]}"; do
