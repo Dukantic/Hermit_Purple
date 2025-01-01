@@ -2,22 +2,10 @@
 sudo pacman -Sy
 
 packages=(
-    neovim    
-    hyprland
     kitty
-    waybar
-    hyprpaper
-    starship
-    toilet
-    lain wallpapers
-    bpytop
-    ranger
-    font-manager
-    playerctl
-    brightnessctl
-    pulseaudio
-    pulseaudio-alsa
-    sddm
+    neovim    
+    dmenu
+    pipewire
 )
 
 for package in "${packages[@]}"; do
