@@ -3,6 +3,7 @@ sudo pacman -Sy
 
 packages=(
     kitty
+    dmenu
     neovim    
     pipewire
     pipewire-pulse
