@@ -6,6 +6,7 @@ packages=(
     neovim    
     pipewire
     pipewire-pulse
+    feh
 )
 
 for package in "${packages[@]}"; do
