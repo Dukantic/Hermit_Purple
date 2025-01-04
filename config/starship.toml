@@ -21,7 +21,7 @@ $time\
 show_always = true
 style_user = "bg:#2A004E"
 style_root = "bg:#2A004E"
-format = '[  ]($style)'
+format = '[  ]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
