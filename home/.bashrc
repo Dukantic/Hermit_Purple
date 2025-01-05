@@ -15,3 +15,5 @@ alias vi='nvim'
 #cat "$HOME/.config/tool/naviASCII"
 export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch | grep -o "unix:abstract=[^,]*" | head -n 1)
 bind "set completion-ignore-case on"
+
+cat ~/.config/frog_ascii.txt
