@@ -1,13 +1,13 @@
 format = """
-[ ](#2A004E)\
+[](#2A004E)\
 $os\
 $username\
-[ ](bg:#2A004E fg:#500073)\
+[](bg:#2A004E fg:#500073)\
 $directory\
-[ ](fg:#c62300 bg:#500073)\
+[](fg:#c62300 bg:#500073)\
 $git_branch\
 $git_status\
-[ ](fg:#f14a00 bg:#c62300)\
+[](fg:#f14a00 bg:#c62300)\
 $time\
 [](fg:#f14a00)\
 """
@@ -21,7 +21,7 @@ $time\
 show_always = true
 style_user = "bg:#2A004E"
 style_root = "bg:#2A004E"
-format = '[  ]($style)'
+format = '[   ]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
