@@ -1,5 +1,5 @@
 
-sudo pacman -Sy
+sudo pacman -Syu
 
 packages=(
     kitty
@@ -7,7 +7,9 @@ packages=(
     neovim    
     pipewire
     pipewire-pulse
+    pavucontrol
     feh
+    thunar
 )
 
 for package in "${packages[@]}"; do

@@ -64,6 +64,8 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *volup[]   = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
 static const char *voldown[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
 static const char *volmute[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
+static const char *webbrowser[] = {"librewolf", NULL};
+static const char *filemanager[] = {"thunar", NULL};
 
 
 
@@ -105,6 +107,8 @@ static const Key keys[] = {
     { 0, XF86XK_AudioRaiseVolume, spawn, {.v = volup } },
     { 0, XF86XK_AudioLowerVolume, spawn, {.v = voldown } },
     { 0, XF86XK_AudioMute, spawn, {.v = volmute } },
+    {MODKEY,                        XK_w,      spawn,          {.v = webbrowser} },
+    {MODKEY,                        XK_e,      spawn,          {.v = filemanager} },
 
 };
 
