@@ -15,5 +15,6 @@ alias vi='nvim'
 #cat "$HOME/.config/tool/naviASCII"
 export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch | grep -o "unix:abstract=[^,]*" | head -n 1)
 bind "set completion-ignore-case on"
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 cat ~/.config/frog_ascii.txt
