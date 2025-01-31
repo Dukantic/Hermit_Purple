@@ -65,7 +65,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *volup[]   = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
 static const char *voldown[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
 static const char *volmute[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
-static const char *webbrowser[] = {"librewolf", NULL};
+static const char *webbrowser[] = {"zen-browser", NULL};
 static const char *filemanager[] = {"thunar", NULL};
 
 

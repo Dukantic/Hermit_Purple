@@ -15,10 +15,14 @@ packages=(
     imagemagick
     ttf-iosevka-nerd
     w3m
+    flatpak
 )
+
 
 for package in "${packages[@]}"; do
     sudo pacman -S --noconfirm "$package"
 done
+
+flatpak install flathub app.zen_browser.zen
 
 echo "All packages installed."
