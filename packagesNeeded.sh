@@ -13,6 +13,7 @@ packages=(
     feh
     ranger
     imagemagick
+    ttf-iosevka-nerd
     w3m
 )
 
