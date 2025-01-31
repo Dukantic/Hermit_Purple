@@ -2,6 +2,8 @@
 sudo pacman -Syu
 
 packages=(
+    networkmanager
+    nm-connection-editor
     kitty
     dmenu
     neovim    
@@ -9,7 +11,9 @@ packages=(
     pipewire-pulse
     pavucontrol
     feh
-    thunar
+    ranger
+    imagemagick
+    w3m
 )
 
 for package in "${packages[@]}"; do
