@@ -64,6 +64,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *volup[]   = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
 static const char *voldown[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
+static const char *brightup[] = { "brightnessctl", "set", "+10%", NULL};
+static const char *brightdown[] = { "brightnessctl", "set", "10%-", NULL};
 static const char *volmute[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 static const char *webbrowser[] = {"zen-browser", NULL};
 static const char *filemanager[] = {"thunar", NULL};
@@ -104,10 +106,12 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-    { 0, XF86XK_AudioRaiseVolume, spawn, {.v = volup } },
-    { 0, XF86XK_AudioLowerVolume, spawn, {.v = voldown } },
-    { 0, XF86XK_AudioMute, spawn, {.v = volmute } },
+	{MODKEY|ShiftMask,             XK_q,      quit,            {0} },
+    {0,          XF86XK_AudioRaiseVolume,      spawn,          {.v = volup }},
+    {0,          XF86XK_AudioLowerVolume,      spawn,          {.v = voldown }},
+    {0,                 XF86XK_AudioMute,      spawn,          {.v = volmute }},
+    {0,             XF86XK_MonBrightnessUp,      spawn,          {.v = brightup}},
+    {0,           XF86XK_MonBrightnessDown,      spawn,          {.v = brightdown}},
     {MODKEY,                        XK_w,      spawn,          {.v = webbrowser} },
     {MODKEY,                        XK_e,      spawn,          {.v = filemanager} },
 
