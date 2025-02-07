@@ -4,6 +4,7 @@ sudo pacman -Syu
 packages=(
     networkmanager
     bash-completion
+    xorg-xrandr
     nm-connection-editor
     kitty
     dmenu
