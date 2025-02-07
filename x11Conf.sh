@@ -12,7 +12,7 @@ Section "InputClass"
     MatchIsPointer "yes"
     Driver "libinput"
     Option "AccelProfile" "flat"
-    Option "AccelSpeed" "-0.3"
+    Option "AccelSpeed" "-0.5"
     Option "NaturalScrolling" "false"
 EndSection
 '
