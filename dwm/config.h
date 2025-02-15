@@ -73,6 +73,7 @@ static const char *brightdown[] = { "brightnessctl", "set", "10%-", NULL};
 static const char *volmute[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 static const char *webbrowser[] = {"zen-browser", NULL};
 static const char *filemanager[] = {"thunar", NULL};
+static const char *poweroff[] = {"poweroff", NULL};
 
 
 
@@ -118,6 +119,7 @@ static const Key keys[] = {
     {0,           XF86XK_MonBrightnessDown,      spawn,          {.v = brightdown}},
     {MODKEY,                        XK_w,      spawn,          {.v = webbrowser} },
     {MODKEY,                        XK_e,      spawn,          {.v = filemanager} },
+    {MODKEY,               XK_Delete,      spawn,           {.v = poweroff} },
 
 };
 
