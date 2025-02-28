@@ -2,7 +2,7 @@ format = """
 [](#000000)\
 $os\
 $username\
-[](bg:#000000 fg:#09200B)\
+[](bg:#010101 fg:#09200B)\
 $directory\
 [](fg:#123F16 bg:#09200B)\
 $git_branch\
@@ -19,8 +19,8 @@ $time\
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#000000"
-style_root = "bg:#000000"
+style_user = "bg:#010101"
+style_root = "bg:#010101"
 format = '[   ]($style)'
 disabled = false
 
