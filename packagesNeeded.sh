@@ -17,7 +17,7 @@ packages=(
     imagemagick
     ttf-iosevka-nerd
     w3m
-    picon
+    picom
     flameshot
 )
 
