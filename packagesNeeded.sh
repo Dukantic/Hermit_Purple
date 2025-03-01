@@ -12,6 +12,8 @@ packages=(
     pipewire
     pipewire-pulse
     pavucontrol
+    pamixer
+    sysstat
     feh
     ranger
     imagemagick
