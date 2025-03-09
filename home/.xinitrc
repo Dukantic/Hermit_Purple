@@ -1,6 +1,7 @@
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 for device in $(xinput list | grep -i touchpad | awk -F'id=' '{print $2}' | awk '{print $1}'); do xinput set-prop $device "libinput Natural Scrolling Enabled" 0; done
 dwmblocks &
+wpctl set-volume @DEFAULT_AUDIO_SINK@ 100% &
 picom &
 feh --bg-fill /home/dukantic/Hermit_Purple/wallpaper2.png &
 rclone mount onedrive: ~/onedrive/ --umask 022 --daemon
